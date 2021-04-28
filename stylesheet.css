@@ -25,6 +25,8 @@ body
     overflow-y: scroll;
     text-align: left;
     font-family: Grotesk-Medium;
+    overflow: hidden;
+
 }
  
 #righty

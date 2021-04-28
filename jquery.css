@@ -109,6 +109,8 @@
     background-color: #b2b2b2;
     border-color: #b2b2b2;
     position: relative;
+	overflow: hidden;
+
 }
 
 .ui-autocomplete {
