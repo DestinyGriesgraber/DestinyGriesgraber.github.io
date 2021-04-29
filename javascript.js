@@ -1,5 +1,6 @@
-function zoom() {
-    var x = document.getElementById("Zoom");
+function openClose(elementID)
+{
+    var x = document.getElementById(elementID);
     if (x.style.display === "block") 
     {
         x.style.display = "none";
@@ -9,80 +10,35 @@ function zoom() {
         x.style.display = "block";
     }
 }
+function zoom() {
+    openClose("Zoom")
+    document.addEventListener('mouseup', function(e) {
+        var active = $( ".selector" ).accordion("option", "active");
+        var container = document.getElementById("Zoom");
+        if (!active.contains(e.target)) {
+            container.style.display = 'none';
+        }
+    });
+}
+
 function pvd() {
-    var x = document.getElementById("PVD");
-    if (x.style.display === "block") 
-    {
-        x.style.display = "none";
-    }
-    else 
-    {
-        x.style.display = "block";
-    }
+    openClose("PVD")
 }
 function quarentine() {
-    var x = document.getElementById("Quarentine");
-    if (x.style.display === "block") 
-    {
-        x.style.display = "none";
-    }
-    else 
-    {
-        x.style.display = "block";
-    }
+    openClose("Quarentine")
 }
 function oneFish() {
-    var x = document.getElementById("OneFish");
-    if (x.style.display === "block") 
-    {
-        x.style.display = "none";
-    }
-    else 
-    {
-        x.style.display = "block";
-    }
+    openClose("OneFish")
 }
 function bait() {
-    var x = document.getElementById("Bait");
-    if (x.style.display === "block") 
-    {
-        x.style.display = "none";
-    }
-    else 
-    {
-        x.style.display = "block";
-    }
+    openClose("Bait")
 }
 function faer() {
-    var x = document.getElementById("Faer");
-    if (x.style.display === "block") 
-    {
-        x.style.display = "none";
-    }
-    else 
-    {
-        x.style.display = "block";
-    }
+    openClose("Faer")
 }
 function riso() {
-    var x = document.getElementById("RISO");
-    if (x.style.display === "block") 
-    {
-        x.style.display = "none";
-    }
-    else 
-    {
-        x.style.display = "block";
-    }
+    openClose("RISO")
 }
 function abram() {
-    var x = document.getElementById("Abram");
-    if (x.style.display === "block") 
-    {
-        x.style.display = "none";
-    }
-    else 
-    {
-        x.style.display = "block";
-    }
+    openClose("Abram")
 }
