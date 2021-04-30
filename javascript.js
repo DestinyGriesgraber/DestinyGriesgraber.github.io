@@ -1,7 +1,14 @@
-function openClose(elementID)
+var linkList =["Zoom", "PVD", "Quarentine", "OneFish", "Bait", "Faer", "RISO", "Abram"]
+
+function openClose(elementId)
 {
-    var x = document.getElementById(elementID);
-    if (x.style.display === "block") 
+    var x = document.getElementById(elementId);
+    for (i = 0; i < linkList.length; ++i)
+        if( elementId != linkList[i])
+        {   listId= document.getElementById(linkList[i])
+            listId.style.display = "none"
+        }
+    if (x.style.display === "block")
     {
         x.style.display = "none";
     }
@@ -12,15 +19,7 @@ function openClose(elementID)
 }
 function zoom() {
     openClose("Zoom")
-    document.addEventListener('mouseup', function(e) {
-        var active = $( ".selector" ).accordion("option", "active");
-        var container = document.getElementById("Zoom");
-        if (!active.contains(e.target)) {
-            container.style.display = 'none';
-        }
-    });
 }
-
 function pvd() {
     openClose("PVD")
 }
@@ -42,3 +41,4 @@ function riso() {
 function abram() {
     openClose("Abram")
 }
+
