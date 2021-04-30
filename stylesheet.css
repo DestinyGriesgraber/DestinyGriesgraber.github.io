@@ -43,6 +43,7 @@ body
     overflow-y: scroll;
     text-align: left;
     font-family: Grotesk-Fine;
+    overflow: hidden;
 }
 
 
@@ -88,6 +89,15 @@ body
     display: none;
 
 }
+#bottom
+{
+    position: absolute;
+    display: block;
+    width: 110%;
+    height: 20%;
+    border: 2pt black solid;
+    left: -10%;
+}
 
 @font-face {
     font-family:Grotesk-Fine ;
@@ -101,7 +111,7 @@ body
     font-family:Grotesk-CompactBlack;
     src: url(./fonts/RightGrotesk-CompactBlack.otf);
 }
-span {
+/*span {
     position: absolute;
     display: inline;
     animation: rotatis 6s infinite normal ;
@@ -115,3 +125,4 @@ span {
     75% { color: orange; }
    100% {  color: purple; }
   }
+  */
