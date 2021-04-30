@@ -1,19 +1,16 @@
-var linkList =["Zoom", "PVD", "Quarentine", "OneFish", "Bait", "Faer", "RISO", "Abram"]
+var linkList = ["Zoom", "PVD", "Quarentine", "OneFish", "Bait", "Faer", "RISO", "Abram"]
 
-function openClose(elementId)
-{
+function openClose(elementId) {
     var x = document.getElementById(elementId);
     for (i = 0; i < linkList.length; ++i)
-        if( elementId != linkList[i])
-        {   listId= document.getElementById(linkList[i])
+        if (elementId != linkList[i]) {
+            listId = document.getElementById(linkList[i])
             listId.style.display = "none"
         }
-    if (x.style.display === "block")
-    {
+    if (x.style.display === "block") {
         x.style.display = "none";
     }
-    else 
-    {
+    else {
         x.style.display = "block";
     }
 }

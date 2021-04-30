@@ -15,14 +15,14 @@ body
 
 #lefty
 {
-    border: 5px solid black;
+    border: 2px solid black;
     width: 19.5%;
     padding: 2%;
     padding-top: .5%;
     position: fixed;
     left: 1%;
     top: 11%;
-    height: 82vh;
+    height: 82%;
     overflow-y: scroll;
     text-align: left;
     font-family: Grotesk-Medium;
@@ -32,14 +32,14 @@ body
  
 #righty
 {
-    border: 5px solid black;
+    border: 2px solid black;
     width: 68.9%;
     padding: 2%;
     padding-top: .5%;
     position: fixed;
     left: 26%;
     top: 11%;
-    height: 82vh;
+    height: 82%;
     overflow-y: scroll;
     text-align: left;
     font-family: Grotesk-Fine;
