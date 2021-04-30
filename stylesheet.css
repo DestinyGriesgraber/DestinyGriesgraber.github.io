@@ -6,8 +6,8 @@ body
 #Destiny
 {
     position: fixed;
-    left: .48%;
-    margin-top: -2%;
+    left: .8%;
+    margin-top: 1%;
     font-size: 40pt;
     font-family: Grotesk-Medium;
     z-index: 1;
@@ -101,3 +101,17 @@ body
     font-family:Grotesk-CompactBlack;
     src: url(./fonts/RightGrotesk-CompactBlack.otf);
 }
+span {
+    position: absolute;
+    display: inline;
+    animation: rotatis 6s infinite normal ;
+    width: 90%;
+  }
+  
+  @keyframes rotatis {
+     0% { color: red; }
+    25% { transform: translateX(90%); }
+    50% {transform: rotat}
+    75% { color: orange; }
+   100% {  color: purple; }
+  }
