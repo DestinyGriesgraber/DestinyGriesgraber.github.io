@@ -22,11 +22,11 @@ function info(title, date, medium, dimentions, production)
     document.getElementById("dimentions").innerHTML = dimentions;
     document.getElementById("production").innerHTML = production;
     
-    document.getElementById("title").classList.add("yarnk");
-    document.getElementById("date").classList.add("yarnk");
-    document.getElementById("medium").classList.add("yarnk");
-    document.getElementById("dimentions").classList.add("yarnk");
-    document.getElementById("production").classList.add("yarnk");
+    document.getElementById("title").classList.add("spacing");
+    document.getElementById("date").classList.add("spacing");
+    document.getElementById("medium").classList.add("spacing");
+    document.getElementById("dimentions").classList.add("spacing");
+    document.getElementById("production").classList.add("spacing");
     
 
 }
@@ -57,7 +57,7 @@ function bait() {
 }
 function faer() {
     openClose("Faer")
-    info("Faer", "December 2020", "PDF (right now), Gifs, Website", "5.5x8in", "Wordpress")
+    info("Faer", "December 2020", "PDF, Gifs Website", "5.5x8in", "Wordpress")
 
 }
 function riso() {
