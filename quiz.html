@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Destiny Griesgraber Portfolio Quiz</title>
+<script>
+    var score = 0;
+     var questions = 
+    [
+    ['How many projects are there?', 8],
+    ['How many fish?', 2],  
+    ['Where was the tunnel?', "Providence"],
+    ['Which project had the Video', "Zoom School"],
+    ['What was the artists first name?', "Destiny"],
+    ['When was the earliest piece?', "September 2019"],
+    ['How many people were in the Quarentine Colaborative?', 15],
+    ['What is Abram\'s last name?', 0],
+    ['How many seconds was the Zoom School Video?', 54],
+    ['What is the artists email?', "dgriesgr@risd.edu"]
+    ];
+
+     function askQuestion(question) 
+     {
+         var answer = prompt(question[0],'');
+        if (answer == question[1])
+            { 
+                alert('Correct!');
+                score++;    
+            } 
+        else 
+        {    
+            alert('Sorry. The correct answer is ' + question[1]);   
+        }
+     }
+
+     for (var i=0; i<questions.length; i++) {
+         askQuestion(questions[i]);
+     }
+</script>
+</head>
+
+<body>
+<p>Well Done</p>
+        <script>
+		    var message = 'You got ' + score;
+            message += ' out of ' + questions.length;
+            message += ' questions correct.';
+            document.write('<p>' + message + '</p>');
+	    </script>
+<p>There are two ways to make sure javascript cannot be read by the layman from the developers side. Based on my research, obfuscation is a popular method of abstracting the source code so as to not be legible by the regular human. Aother method is to disable right clicking and the ability to view source code/console. The other method is to only have javascript that records and sends data to the server, have all the bits you want secret on the server, have it calculate and send back the result to the browser. The main drawbacks of obfuscation is that the code can be cracked. Either by apps or the exact script used to obfuscate it reversed. Disabling developer tools and right click will only make it a little bit harder for the code to be seen. The equivalent of having a motion sensing light to keep out a burglar. For the server side processing, obviously it means you need to have more resources in the server to render out your functions and send them back to the browser.</p>
+<a href="index.html">Click me to head back to the main page</a>
+</body>
+</html>
+

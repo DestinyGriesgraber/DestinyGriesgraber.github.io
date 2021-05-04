@@ -1,103 +1,123 @@
 body
 {
-    background-color: #b2b2b2;
+    background-color: #cecece;
 }
-
+::selection
+{
+    background: rgb(255 0 255);
+}
+#cursor
+{
+    cursor: url( );
+}
 #Destiny
 {
-    position: fixed;
+    position: relative;
+    display: block;
     left: .8%;
-    margin-top: 1%;
+    margin-top: 0%;
     font-size: 40pt;
     font-family: Grotesk-Medium;
     z-index: 1;
+    overflow: hidden;
+    white-space: nowrap;
 }
-
+#container
+{
+    height: auto;
+    margin:auto;
+    width: 30%;
+    display: flex;
+}
 #lefty
 {
     border: 5px solid black;
-    width: 19.5%;
-    padding: 2%;
+    width: 23.5%;
     padding-top: .5%;
-    position: fixed;
+    position: absolute;
     left: 1%;
     top: 11%;
-    height: 82vh;
+    height: 65%;
     overflow-y: scroll;
     text-align: left;
-    font-family: Grotesk-Medium;
-    overflow: hidden;
-
-}
- 
-#righty
-{
-    border: 5px solid black;
-    width: 68.9%;
-    padding: 2%;
-    padding-top: .5%;
-    position: fixed;
-    left: 26%;
-    top: 11%;
-    height: 82vh;
-    overflow-y: scroll;
-    text-align: left;
-    font-family: Grotesk-Fine;
-    overflow: hidden;
-}
-
-
-
-#Zoom
-{
-    display: none;
-}
-
-
-#PVD
-{
-    display: none;
-
-}
-#Quarentine
-{
-    display: none;
-
-}
-#OneFish
-{
-    display: none;
-
-}
-#Bait
-{
-    display: none;
-
-}
-#Faer
-{
-    display: none;
-
-}
-#RISO
-{
-    display: none;
-
-}
-#Abram
-{
-    display: none;
-
+    font-family: Grotesk-CompactBlack;
+    display: flex;
+    white-space: normal;
 }
 #bottom
 {
     position: absolute;
-    display: block;
-    width: 110%;
-    height: 20%;
-    border: 2pt black solid;
-    left: -10%;
+    display: inline-block;
+    width: 23.3%;
+    min-height: 21%;
+    border: 5pt black solid;
+    border-top: 0px black solid;
+    left: 1%;
+    bottom: 1.2%;
+    font-family: Grotesk-Fine;
+    font-size: 1.5em;
+    columns: 2;
+    column-gap: 0pt;
+    column-rule: 5px black solid;
+    overflow: hidden;
 }
+
+#righty
+{
+    border: 5px solid black;
+    width: 72%;
+    padding-top: .5%;
+    position: absolute;
+    margin-bottom: 0%;
+    left: 26%;
+    top: 11%;
+    overflow-y: scroll;
+    text-align: left;
+    font-family: Grotesk-Fine;
+    display: inline-block;
+    bottom: 1.2%;
+}
+
+.spacing
+{
+    padding: 1% 1% 0% 3%;
+}
+
+#title
+{
+    font-weight: bold;
+    column-span: all;
+    border-bottom: 5pt black solid;
+    padding-left: 2%;
+}
+#date
+{
+
+}
+#medium
+{
+    
+}
+#dimentions
+{
+}
+#production
+{
+
+}
+#accordionGroup
+{
+    margin: 2%;
+    padding: 1% 2%;
+}
+
+#Zoom, #PVD, #Quarentine, #OneFish, #Bait, #Faer, #RISO, #Abram
+{
+    display: none;
+    padding: 1%;
+}
+
+
 
 @font-face {
     font-family:Grotesk-Fine ;
@@ -114,11 +134,11 @@ body
 /*span {
     position: absolute;
     display: inline;
-    animation: rotatis 6s infinite normal ;
+    animation: rotate 6s infinite normal ;
     width: 90%;
   }
   
-  @keyframes rotatis {
+  @keyframes rotate {
      0% { color: red; }
     25% { transform: translateX(90%); }
     50% {transform: rotat}
@@ -126,3 +146,4 @@ body
    100% {  color: purple; }
   }
   */
+

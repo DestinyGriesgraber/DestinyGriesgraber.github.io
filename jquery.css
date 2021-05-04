@@ -97,17 +97,19 @@
     left: -7%;
 	margin: 2px 0 0 0;
 	padding: 0em .5em .5em 0em;
-	font-size: 100%;
-    background-color: #b2b2b2;
-    border-color: #b2b2b2;
+	font-size: 1.3em;
+    background-color: #cecece;
+    border-color: #cecece;
+	color: black;
+	font-family: Grotesk-Medium; 
 
 }
 .ui-accordion .ui-accordion-content {
 	padding: 0em 0em 1em 0em;
 	border-top: 0;
     overflow-y: scroll;
-    background-color: #b2b2b2;
-    border-color: #b2b2b2;
+    background-color: #cecece;
+    border-color: #cecece;
     position: relative;
 	overflow: hidden;
 
