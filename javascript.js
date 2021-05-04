@@ -34,6 +34,7 @@ function info(title, date, medium, dimentions, production)
 function zoom() {
     openClose("Zoom")
     info("Zoom School", "Nov 2020", "Video", "HD", "After Effects")
+    typeWriter();
 }
 function pvd() {
     openClose("PVD")
@@ -71,3 +72,14 @@ function abram() {
 
 }
 
+var i = 0;
+var txt = 'rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("Destiny").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
