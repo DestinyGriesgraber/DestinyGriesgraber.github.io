@@ -1,6 +1,14 @@
 body
 {
-    background-color: #b2b2b2;
+    background-color: #cecece;
+}
+::selection
+{
+    background: rgb(255 0 255);
+}
+#cursor
+{
+    cursor: url( );
 }
 #Destiny
 {
@@ -11,6 +19,8 @@ body
     font-size: 40pt;
     font-family: Grotesk-Medium;
     z-index: 1;
+    overflow: hidden;
+    white-space: nowrap;
 }
 #container
 {
@@ -124,11 +134,11 @@ body
 /*span {
     position: absolute;
     display: inline;
-    animation: rotatis 6s infinite normal ;
+    animation: rotate 6s infinite normal ;
     width: 90%;
   }
   
-  @keyframes rotatis {
+  @keyframes rotate {
      0% { color: red; }
     25% { transform: translateX(90%); }
     50% {transform: rotat}
@@ -136,3 +146,4 @@ body
    100% {  color: purple; }
   }
   */
+
