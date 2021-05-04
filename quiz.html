@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Destiny Griesgraber Portfolio Quiz</title>
+<script>
+    var score = 0;
+     var questions = 
+    [
+    ['How many projects are there?', 8],
+    ['How many fish?', 2],  
+    ['Where was the tunnel?', "Providence"],
+    ['Which project had the Video', "Zoom School"],
+    ['What was the artists first name?', "Destiny"],
+    ['When was the earliest piece?', "September 2019"],
+    ['How many people were in the Quarentine Colaborative?', 15],
+    ['What is Abram\'s last name?', 0],
+    ['How many seconds was the Zoom School Video?', 54],
+    ['What is the artists email?', "dgriesgr@risd.edu"]
+    ];
+
+     function askQuestion(question) 
+     {
+         var answer = prompt(question[0],'');
+        if (answer == question[1])
+            { 
+                alert('Correct!');
+                score++;    
+            } 
+        else 
+        {    
+            alert('Sorry. The correct answer is ' + question[1]);   
+        }
+     }
+
+     for (var i=0; i<questions.length; i++) {
+         askQuestion(questions[i]);
+     }
+</script>
+</head>
+
+<body>
+<p>Well Done</p>
+        <script>
+		    var message = 'You got ' + score;
+            message += ' out of ' + questions.length;
+            message += ' questions correct.';
+            document.write('<p>' + message + '</p>');
+	    </script>
+<a href="index.html">Click me to head back to the main page</a>
+</body>
+</html>
+
