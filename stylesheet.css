@@ -6,10 +6,11 @@ body
 {
     background: rgb(255 0 255);
 }
-#cursor
+/*cursor // intend to change cursor based on click but probalby wont get there yet
 {
     cursor: url( );
 }
+*/
 #Destiny
 {
     position: relative;
@@ -90,21 +91,7 @@ body
     border-bottom: 5pt black solid;
     padding-left: 2%;
 }
-#date
-{
 
-}
-#medium
-{
-    
-}
-#dimentions
-{
-}
-#production
-{
-
-}
 #accordionGroup
 {
     margin: 2%;
@@ -131,7 +118,7 @@ body
     font-family:Grotesk-CompactBlack;
     src: url(./fonts/RightGrotesk-CompactBlack.otf);
 }
-/*span {
+/*span { // working on an animation but doubt I will get it done in time.
     position: absolute;
     display: inline;
     animation: rotate 6s infinite normal ;
